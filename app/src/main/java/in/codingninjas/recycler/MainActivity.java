@@ -85,7 +85,11 @@ public class MainActivity extends AppCompatActivity implements RCVAdapter.BatchL
         if (!showing) {
             NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
             Intent intent = new Intent(this, MainActivity.class);
+
             PendingIntent pi = PendingIntent.getActivity(this,1, intent, 0);
+
+
+
             builder.setSmallIcon(android.R.drawable.ic_dialog_email)
                     .setTicker("blha blah blah blha")
                     .setLargeIcon(BitmapFactory.decodeResource(getResources(), android.R.drawable.ic_dialog_info))
